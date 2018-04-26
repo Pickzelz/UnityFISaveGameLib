@@ -1,0 +1,76 @@
+\hypertarget{class_save_engine}{}\section{Save\+Engine Class Reference}
+\label{class_save_engine}\index{Save\+Engine@{Save\+Engine}}
+
+
+Save engine core function.  
+
+
+Inheritance diagram for Save\+Engine\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_save_engine}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_save_engine_aa1fc764f73e31736440014553f49ec1d}{Register\+Save\+Class$<$ T $>$}} (T this\+Class)
+\item 
+void \mbox{\hyperlink{class_save_engine_a39f4a03af6103bc9f327ba434c7d33a1}{Save\+Game}} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_save_engine_aa7b27b629384a9039a8a1fce7d2cdd2c}\label{class_save_engine_aa7b27b629384a9039a8a1fce7d2cdd2c}} 
+string \mbox{\hyperlink{class_save_engine_aa7b27b629384a9039a8a1fce7d2cdd2c}{Save\+Name}}
+\begin{DoxyCompactList}\small\item\em Name for your save file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_save_engine_a7acdd7c43a03ed9d92be36626e11d231}\label{class_save_engine_a7acdd7c43a03ed9d92be36626e11d231}} 
+override void {\bfseries Init} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Save engine core function. 
+
+\mbox{\hyperlink{class_save_engine}{Save\+Engine}} class
+\begin{DoxyItemize}
+\item Create empty Game\+Object and add Save\+Engine.\+cs on property. 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_save_engine_aa1fc764f73e31736440014553f49ec1d}\label{class_save_engine_aa1fc764f73e31736440014553f49ec1d}} 
+\index{Save\+Engine@{Save\+Engine}!Register\+Save\+Class$<$ T $>$@{Register\+Save\+Class$<$ T $>$}}
+\index{Register\+Save\+Class$<$ T $>$@{Register\+Save\+Class$<$ T $>$}!Save\+Engine@{Save\+Engine}}
+\subsubsection{\texorpdfstring{Register\+Save\+Class$<$ T $>$()}{RegisterSaveClass< T >()}}
+{\footnotesize\ttfamily void Save\+Engine.\+Register\+Save\+Class$<$ T $>$ (\begin{DoxyParamCaption}\item[{T}]{this\+Class }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item Register which property or field that must be save.
+\item This function also load data from saved file.
+\end{DoxyItemize}
+
+usage\+: \begin{quote}
+Save\+Engine.\+Instance.\+Register\+Save\+Class(this);\end{quote}
+\mbox{\Hypertarget{class_save_engine_a39f4a03af6103bc9f327ba434c7d33a1}\label{class_save_engine_a39f4a03af6103bc9f327ba434c7d33a1}} 
+\index{Save\+Engine@{Save\+Engine}!Save\+Game@{Save\+Game}}
+\index{Save\+Game@{Save\+Game}!Save\+Engine@{Save\+Engine}}
+\subsubsection{\texorpdfstring{Save\+Game()}{SaveGame()}}
+{\footnotesize\ttfamily void Save\+Engine.\+Save\+Game (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyItemize}
+\item This function for save game data
+\item Data is from all registered properties and field (see \mbox{\hyperlink{class_save_manager}{Save\+Manager}})
+\end{DoxyItemize}
+
+usage\+: \begin{quote}
+Save\+Engine.\+Instance.\+Save\+Game();\end{quote}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Save\+Engine.\+cs\end{DoxyCompactItemize}
